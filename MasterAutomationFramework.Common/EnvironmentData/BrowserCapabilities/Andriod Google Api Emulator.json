@@ -1,0 +1,20 @@
+[
+  {
+    "CapabilityName": "Android_GoogleApiEmu_1.13.0_Chrome_9.0",
+    "AppiumVersion": "1.13.0",
+    "DeviceName": "Android GoogleAPI Emulator",
+    "DeviceOrientation": "portrait",
+    "PlatformVersion": "9.0",
+    "PlatformName": "Android",
+    "BrowserName": "Chrome"
+  },
+  {
+    "CapabilityName": "Android_GoogleApiEmu_1.13.0_Chrome_8.1",
+    "AppiumVersion": "1.13.0",
+    "DeviceName": "Android GoogleAPI Emulator",
+    "DeviceOrientation": "portrait",
+    "PlatformVersion": "8.1",
+    "PlatformName": "Android",
+    "BrowserName": "Chrome"
+  }
+]

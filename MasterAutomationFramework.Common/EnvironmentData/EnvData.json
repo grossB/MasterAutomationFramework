@@ -1,0 +1,5 @@
+{
+  "PageLoadTimeoutInSeconds": 60,
+  "WikipediaDomain": "https://en.wikipedia.org",
+  "PathToBrowserCapabilities": "EnvironmentData\\BrowserCapabilities\\"
+}

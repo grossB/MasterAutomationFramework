@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,11 +30,22 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Polly.7.2.1\lib\net472\Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly.Contrib.WaitAndRetry, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17ed651729209acc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Polly.Contrib.WaitAndRetry.1.1.1\lib\net472\Polly.Contrib.WaitAndRetry.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,15 +57,41 @@
     <Compile Include="CleanupStrategy1\CleanupQueue.cs" />
     <Compile Include="CleanupStrategy1\ICleanupQueue.cs" />
     <Compile Include="CleanupStrategy1\Ilogger.cs" />
-    <Compile Include="ConfigLoader\ConfigLoaderManager.cs" />
-    <Compile Include="ConfigLoader\SimpleConfig.cs" />
-    <Compile Include="EnviromentVariablesReader\Class1.cs" />
+    <Compile Include="ConfigLoader\Xml\ConfigLoaderManager.cs" />
+    <Compile Include="ConfigLoader\Configuration-ThirdOption\JsonFileConfiguration.cs" />
+    <Compile Include="ConfigLoader\Xml\SimpleConfig.cs" />
+    <Compile Include="EnviromentVariables\EnviromentVariableManager.cs" />
     <Compile Include="Extension\CollectionExtension.cs" />
     <Compile Include="Extension\EnumExtension.cs" />
     <Compile Include="Extension\ReflectionExtensions.cs" />
-    <Compile Include="Extension\ExtensionMethods.cs" />
+    <Compile Include="Extension\ProcessExtension.cs" />
     <Compile Include="Extension\ImageExtensions.cs" />
+    <Compile Include="Extension\StorageHelper.cs" />
+    <Compile Include="Extension\StringExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\WindowsScreenshot.cs" />
+    <Compile Include="WaitUntilPollyPackage\WaitUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EnvironmentData\BrowserCapabilities\Andriod Google Api Emulator.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="EnvironmentData\BrowserCapabilities\Chrome.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="EnvironmentData\BrowserCapabilities\iPhone XS Emulator.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="EnvironmentData\EnvData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Selenium.Essentials\Selenium.Essentials.csproj">
+      <Project>{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}</Project>
+      <Name>Selenium.Essentials</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

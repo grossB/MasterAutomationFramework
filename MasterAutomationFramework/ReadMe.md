@@ -19,3 +19,17 @@ Project consists of few Projects:
 - WindowsShurtcut
 
 
+Project: NunitTest - content
+DriverFactory - dictionary of working WebDriver. Logic can be reused to created parallel execution 
+CaseCommonDataSource - class as an test attribute with custom method passed as an parameter. 
+	Generic possibility to run test scenario with changing amount of data. Iteration count be modified by json file content.
+RunMultipleScenarioByConfiguration - Example of clean up at the class scope that is called only once and close all driver that are register
+	at driver factory.
+
+
+TODO: SpecFlow
+
+
+
+
+
