@@ -47,8 +47,12 @@ Example:
 	recognizable it is made	as and kind of abstract example to let brief idea to what so ever this tool can be used for
 
 
-
-
+Project NUnitTest:
+Parallel execution:		
+		Children - one per each class in folder 
+		Fixture - all in parallel class attribute [TestFixture, Parallelizable(ParallelScope.All)]
+			method attribute needed [[Parallelizable(ParallelScope.Self)] || [Parallelizable(ParallelScope.Children)]]
+		RunMultipleScenarioByConfiguration - Custom Attribute
 
 
 

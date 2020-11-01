@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Common", "UnitTestProject1\UnitTest.Common.csproj", "{6DD3E313-9BF6-4EC6-8737-14DC4C123114}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NunitTest", "NunitTest\NunitTest.csproj", "{AE2F54F0-2D20-4D9C-91D2-064557C89A0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterAutomationFramework.NunitTest", "NunitTest\MasterAutomationFramework.NunitTest.csproj", "{AE2F54F0-2D20-4D9C-91D2-064557C89A0F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selenium.Essentials", "Selenium.Essentials\Selenium.Essentials.csproj", "{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T4GenericTemplates", "T4Templates\T4GenericTemplates.csproj", "{A41715DA-D7BF-4556-A166-CABF1B3642A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework.T4GenericTemplates", "T4Templates\MasterAutomationFramework.T4GenericTemplates.csproj", "{A41715DA-D7BF-4556-A166-CABF1B3642A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

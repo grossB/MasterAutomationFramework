@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneratedClasses\GooglePage2.cs" />
     <Compile Include="GeneratedClasses\Google\GooglePage2By.cs">
       <DependentUpon>PageByGenerator.txt4</DependentUpon>
     </Compile>
