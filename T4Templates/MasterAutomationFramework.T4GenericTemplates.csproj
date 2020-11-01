@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{28C89452-4F66-4D85-8E67-58DC32EBB853}</ProjectGuid>
+    <ProjectGuid>{A41715DA-D7BF-4556-A166-CABF1B3642A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MasterAutomationFramework.SeleniumAPI</RootNamespace>
-    <AssemblyName>MasterAutomationFramework.SeleniumAPI</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>GenericTemplates</RootNamespace>
+    <AssemblyName>GenericTemplates</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -21,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,11 +29,11 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    <Reference Include="Microsoft.VisualStudio.Shell.15.0, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.Shell.15.0.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,23 +52,45 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extension\GetByReflector.cs" />
-    <Compile Include="NewFolder1\WebElementWrapper.cs" />
+    <Compile Include="GeneratedClasses\Google\GooglePage2By.cs">
+      <DependentUpon>PageByGenerator.txt4</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedClasses\Google\GooglePageBy.cs">
+      <DependentUpon>PageByGenerator.txt4</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedClasses\MicrosoftPage\MicrosoftPageBy.cs">
+      <DependentUpon>PageByGenerator.txt4</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedClasses\GooglePage.cs" />
+    <Compile Include="GeneratedClasses\MicrosoftPage.cs" />
+    <Compile Include="GeneratedClasses\WebPageBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WaitUtils\ElementsOperation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MasterAutomationFramework.Common\MasterAutomationFramework.Common.csproj">
-      <Project>{E02BE41A-D3FB-49CC-BACE-82CC58760BF9}</Project>
-      <Name>MasterAutomationFramework.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Selenium.Essentials\Selenium.Essentials.csproj">
-      <Project>{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}</Project>
-      <Name>Selenium.Essentials</Name>
-    </ProjectReference>
+    <Content Include="Pages\MicrosoftPage.xml" />
+    <Content Include="Pages\PageClasses.xml" />
+    <Content Include="Pages\GooglePagePaths2.xml" />
+    <Content Include="Pages\GooglePagePaths.xml" />
+    <Content Include="T4Template\PageByGenerator.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="GeneratedClasses\Google\PageByGenerator.txt4" />
+    <None Include="GeneratedClasses\MicrosoftPage\PageByGenerator.txt4" />
     <None Include="packages.config" />
+    <None Include="T4Template\TemplateFileManagerV2.1.ttinclude" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MasterAutomationFramework.SeleniumAPI\MasterAutomationFramework.SeleniumAPI.csproj">
+      <Project>{28c89452-4f66-4d85-8e67-58dc32ebb853}</Project>
+      <Name>MasterAutomationFramework.SeleniumAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

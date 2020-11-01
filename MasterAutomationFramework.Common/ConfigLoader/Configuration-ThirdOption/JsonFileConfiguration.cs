@@ -20,6 +20,7 @@ namespace NunitTest.Configuration_ThirdOption
             {
                 if (_envData == null)
                 {
+                    // EnvironmentData - EnvData.json file it copied to output folder. Then this json is use to retrive cofig options
                     var envDataFilePath = Path.Combine(Utility.Runtime.ExecutingFolder, "EnvironmentData", "EnvData.json");
                     if (File.Exists(envDataFilePath))
                     {

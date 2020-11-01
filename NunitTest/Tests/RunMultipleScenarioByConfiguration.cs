@@ -26,6 +26,7 @@ namespace Tests
             foreach (var driver in ManyDriverFactory.SessionDrivers)
             {
                 driver.Value.Close();
+                driver.Value.Quit();
             }
         }
     }

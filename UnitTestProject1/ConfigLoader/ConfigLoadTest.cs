@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using MasterAutomationFramework.Common.ConfigLoader.ProjectConfig;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 
 namespace MasterAutomationFramework.Common.ConfigLoader.Tests

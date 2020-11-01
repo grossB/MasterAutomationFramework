@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NunitTest", "NunitTest\Nuni
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selenium.Essentials", "Selenium.Essentials\Selenium.Essentials.csproj", "{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T4GenericTemplates", "T4Templates\T4GenericTemplates.csproj", "{A41715DA-D7BF-4556-A166-CABF1B3642A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41715DA-D7BF-4556-A166-CABF1B3642A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41715DA-D7BF-4556-A166-CABF1B3642A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41715DA-D7BF-4556-A166-CABF1B3642A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41715DA-D7BF-4556-A166-CABF1B3642A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

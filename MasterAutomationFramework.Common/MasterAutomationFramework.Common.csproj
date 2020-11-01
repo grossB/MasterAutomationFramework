@@ -43,6 +43,7 @@
       <HintPath>..\packages\Polly.Contrib.WaitAndRetry.1.1.1\lib\net472\Polly.Contrib.WaitAndRetry.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -57,6 +58,7 @@
     <Compile Include="CleanupStrategy1\CleanupQueue.cs" />
     <Compile Include="CleanupStrategy1\ICleanupQueue.cs" />
     <Compile Include="CleanupStrategy1\Ilogger.cs" />
+    <Compile Include="ConfigLoader\ProjectConfig\AppConfigFields.cs" />
     <Compile Include="ConfigLoader\Xml\ConfigLoaderManager.cs" />
     <Compile Include="ConfigLoader\Configuration-ThirdOption\JsonFileConfiguration.cs" />
     <Compile Include="ConfigLoader\Xml\SimpleConfig.cs" />
@@ -73,6 +75,7 @@
     <Compile Include="WaitUntilPollyPackage\WaitUtils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ConfigLoader\ProjectConfig\Environment.config" />
     <None Include="EnvironmentData\BrowserCapabilities\Andriod Google Api Emulator.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -92,6 +95,9 @@
       <Project>{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}</Project>
       <Name>Selenium.Essentials</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="System\Configuration\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
