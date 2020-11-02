@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using NunitTest.DriverFactory;
 using NunitTest.ParallelTest.Utility;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -15,6 +16,7 @@ namespace NunitTest.ParallelTest.Children
         public void TestMethod3()
         {
             var driver = new ChromeDriver(".");
+            ManyDriverFactory.SessionDrivers.TryAdd(driver.CurrentWindowHandle, driver);
             //driver.Navigate().GoToUrl("https://www.google.pl/");
             driver.Navigate().GoToUrl("file:///C:/Users/Bartony/Desktop/dddd");
             driver.FindElementByXPath("//*[@id='tsf']/div[2]/div[1]/div[1]/div/div[2]/input").SendKeys("knight online" + Keys.Enter);
@@ -28,6 +30,7 @@ namespace NunitTest.ParallelTest.Children
         public void TestMethod4()
         {
             var driver = new ChromeDriver(".");
+            ManyDriverFactory.SessionDrivers.TryAdd(driver.CurrentWindowHandle, driver);
             //driver.Navigate().GoToUrl("https://www.google.pl/");
             driver.Navigate().GoToUrl("file:///C:/Users/Bartony/Desktop/dddd");
             driver.FindElementByXPath("//*[@id='tsf']/div[2]/div[1]/div[1]/div/div[2]/input").SendKeys("knight online" + Keys.Enter);

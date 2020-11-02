@@ -10,7 +10,7 @@ namespace NunitTest.ParallelTest.NewFolder
     [TestFixture, Parallelizable(ParallelScope.All)]
     public class TestFixture2 : BaseFixture
     {
-        [Parallelizable(ParallelScope.Children)]
+        [Parallelizable(ParallelScope.Self)]
         [Test]
         public void TestMethod1()
         {

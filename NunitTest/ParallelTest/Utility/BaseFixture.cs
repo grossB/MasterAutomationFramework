@@ -1,6 +1,7 @@
 ﻿using AventStack.ExtentReports;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
+using NunitTest.DriverFactory;
 
 namespace NunitTest.ParallelTest.Utility
 {
@@ -18,6 +19,10 @@ namespace NunitTest.ParallelTest.Utility
         {
             AventStack.ExtentReports.ExtentReports Reporter = new AventStack.ExtentReports.ExtentReports();
             ExtentManager.Instance.Flush();
+            foreach (var driver in ManyDriverFactory.SessionDrivers)
+            {
+                driver.Value.Quit();
+            }
         }
 
         [SetUp]
