@@ -1,16 +1,17 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using SeleniumAPI.ElementHighlight;
-using SeleniumAPI.Helper;
-using SeleniumAPI.PageObjectModelWithRefeltedBy;
-using SeleniumAPI.Pages.Google;
-using SeleniumAPI.Driver;
 using System.Threading;
-using SeleniumAPI.Enums;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using SeleniumAPI.Elements;
+using MasterAutomationFramework.SeleniumAPI.Enums;
+using MasterAutomationFramework.SeleniumAPI.API.DriverFactory;
+using MasterAutomationFramework.SeleniumAPI.Helper;
+using MasterAutomationFramework.SeleniumAPI.API.ElementHighlight;
+using MasterAutomationFramework.SeleniumAPI.Drivers;
+using GenericTemplates.GeneratedClasses;
+using MasterAutomationFramework.SeleniumAPI.Elements;
 
 namespace MasterAutomationFramework.SeleniumAPI.Tests.UnitTests
 {
@@ -28,7 +29,7 @@ namespace MasterAutomationFramework.SeleniumAPI.Tests.UnitTests
             }
             catch (Exception)
             {
-                driver = DriverFactory.CreateDriver(BrowserType.Chrome);
+                driver = DriverFactoryEx.CreateDriver(BrowserType.Chrome);
                 ScriptExecutor = new JsExecutor(driver);
             }
         }
@@ -209,27 +210,27 @@ namespace MasterAutomationFramework.SeleniumAPI.Tests.UnitTests
             Assert.AreEqual("https://selenium.dev/support/", driver.Url);
         }
 
-        [TestMethod]
-        [TestCategory("Locator's")]
-        public void ReflectedByAttribute()
-        {
-            // --------------------- Reflected By attribute --------------------------------
-            var page = new ExamplePage();
-            var locator = page.MyAccount.GetElementLocator(typeof(ExamplePage), "MyAccount");
-            Assert.AreEqual(By.Id("account"), locator);
-        }
+        //[TestMethod]
+        //[TestCategory("Locator's")]
+        //public void ReflectedByAttribute()
+        //{
+        //    // --------------------- Reflected By attribute --------------------------------
+        //    var page = new ExamplePage();
+        //    var locator = page.MyAccount.GetElementLocator(typeof(ExamplePage), "MyAccount");
+        //    Assert.AreEqual(By.Id("account"), locator);
+        //}
 
-        [TestMethod]
-        [TestCategory("Locator's")]
-        public void ReflectedByPageElement()
-        {
-            // --------------------- Reflected By Element --------------------------------
-            var googlePage = new GooglePage(new SeleniumAPI.SeleniumApi(driver));
-            By googleElementSelector = googlePage.Selectors[nameof(googlePage.NoobImageElement)];
-            // For Testing Purpose
-            By NoobImageBy = By.XPath("//*[@id='main']/ul[1]/li[3]/a/ul/li[1]/img");
-            Assert.AreEqual(NoobImageBy.ToString(), googleElementSelector.ToString());
-        }
+        //[TestMethod]
+        //[TestCategory("Locator's")]
+        //public void ReflectedByPageElement()
+        //{
+        //    // --------------------- Reflected By Element --------------------------------
+        //    var googlePage = new GooglePage(new SeleniumAPI.SeleniumApi(driver));
+        //    By googleElementSelector = googlePage.Selectors[nameof(googlePage.NoobImageElement)];
+        //    // For Testing Purpose
+        //    By NoobImageBy = By.XPath("//*[@id='main']/ul[1]/li[3]/a/ul/li[1]/img");
+        //    Assert.AreEqual(NoobImageBy.ToString(), googleElementSelector.ToString());
+        //}
 
         [TestMethod]
         [TestCategory("Element Highlight")]
@@ -270,7 +271,7 @@ namespace MasterAutomationFramework.SeleniumAPI.Tests.UnitTests
         public static void CleanupAfterTestClassPackage()
         {
             driver?.Quit();
-            var browserProcessCleaner = new BrowserProcessCleaner(null);
+            var browserProcessCleaner = new BrowserProcessCleaner();
             browserProcessCleaner.CleanBrowserProcesses();
         }
     }

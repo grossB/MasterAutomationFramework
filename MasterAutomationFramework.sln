@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework.SeleniumAPI.Tests", "MasterAutomationFramework.SeleniumAPI.Tests\MasterAutomationFramework.SeleniumAPI.Tests.csproj", "{BF0B5AC5-CA30-4526-89BF-255809F8A618}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendReporter", "ExtendReporter\ExtendReporter.csproj", "{7DB39BFF-616F-4D96-836C-32F7A56AAB30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework.Common.Serilog", "MasterAutomationFramework.Common.Serilog\MasterAutomationFramework.Common.Serilog.csproj", "{DFFBE242-1BCE-4D9D-9E9B-5A04025B6199}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{BF0B5AC5-CA30-4526-89BF-255809F8A618}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF0B5AC5-CA30-4526-89BF-255809F8A618}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF0B5AC5-CA30-4526-89BF-255809F8A618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB39BFF-616F-4D96-836C-32F7A56AAB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB39BFF-616F-4D96-836C-32F7A56AAB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB39BFF-616F-4D96-836C-32F7A56AAB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB39BFF-616F-4D96-836C-32F7A56AAB30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFFBE242-1BCE-4D9D-9E9B-5A04025B6199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFFBE242-1BCE-4D9D-9E9B-5A04025B6199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFFBE242-1BCE-4D9D-9E9B-5A04025B6199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFFBE242-1BCE-4D9D-9E9B-5A04025B6199}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

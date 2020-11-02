@@ -1,4 +1,4 @@
-﻿namespace MasterAutomationFramework.SeleniumAPI.API.Drivers
+﻿namespace MasterAutomationFramework.SeleniumAPI.ExtendReporter
 {
     using AventStack.ExtentReports;
     using System;

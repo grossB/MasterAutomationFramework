@@ -1,5 +1,7 @@
 ﻿namespace MasterAutomationFramework.SeleniumAPI.API.Drivers
 {
+    using MasterAutomationFramework.SeleniumAPI.Elements;
+    using MasterAutomationFramework.SeleniumAPI.Enums;
     using OpenQA.Selenium;
 
     public static class LocatorExtension
