@@ -3,7 +3,7 @@
     using Elements;
     using OpenQA.Selenium;
 
-    public class SeleniumApi
+    public class SeleniumElementApi
     {
         /// <summary>
         /// Gets or set web Driver.
@@ -43,7 +43,7 @@
         public ScreenShotManager ScreenShotManager { get; set; }
 
 
-        public SeleniumApi(IWebDriver driver)
+        public SeleniumElementApi(IWebDriver driver)
         {
             this.Driver = driver;
             this.Elements = new ElementsWaitConditions(driver);

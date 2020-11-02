@@ -11,7 +11,7 @@
 //          Developed by Bartosz Gross, grossbartosz@gmail.com
 // ========================================================================
 // ------------------------------------------------------------------------
-namespace SeleniumAPI.Pages.Google
+namespace MasterAutomationFramework.T4GenericTemplates.Pages.Google
 {
 	using System.Diagnostics.CodeAnalysis;
 	using OpenQA.Selenium;

@@ -1,6 +1,5 @@
-﻿using OpenQA.Selenium;
-using SeleniumAPI.Pages.MicrosoftPage;
-using System.Collections.Generic;
+﻿using MasterAutomationFramework.T4GenericTemplates.Pages.MicrosoftPage;
+using OpenQA.Selenium;
 
 namespace GenericTemplates.GeneratedClasses
 {

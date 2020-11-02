@@ -8,14 +8,14 @@ namespace MasterAutomationFramework.Common.Serilog.TestTemplates
 
     public abstract class TestTemplate : ITestScenario, IExecuteTest
     {
-        public SeleniumApi WebSeleniumApi { get; private set; }
+        public SeleniumElementApi WebSeleniumApi { get; private set; }
 
         public SeriLogger Logger;
 
 
         public TestTemplate(IWebDriver driver, string testName)
         {
-            this.WebSeleniumApi = new SeleniumApi(driver);
+            this.WebSeleniumApi = new SeleniumElementApi(driver);
             this.Logger = new SeriLogger(testName);
         }
 

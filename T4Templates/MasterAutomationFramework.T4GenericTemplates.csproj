@@ -7,11 +7,12 @@
     <ProjectGuid>{A41715DA-D7BF-4556-A166-CABF1B3642A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GenericTemplates</RootNamespace>
-    <AssemblyName>GenericTemplates</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>MasterAutomationFramework.T4GenericTemplates</RootNamespace>
+    <AssemblyName>MasterAutomationFramework.T4GenericTemplates</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -59,11 +60,11 @@
     <Compile Include="GeneratedClasses\Google\GooglePageBy.cs">
       <DependentUpon>PageByGenerator.txt4</DependentUpon>
     </Compile>
+    <Compile Include="GeneratedClasses\GooglePage.cs" />
+    <Compile Include="GeneratedClasses\MicrosoftPage.cs" />
     <Compile Include="GeneratedClasses\MicrosoftPage\MicrosoftPageBy.cs">
       <DependentUpon>PageByGenerator.txt4</DependentUpon>
     </Compile>
-    <Compile Include="GeneratedClasses\GooglePage.cs" />
-    <Compile Include="GeneratedClasses\MicrosoftPage.cs" />
     <Compile Include="GeneratedClasses\WebPageBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

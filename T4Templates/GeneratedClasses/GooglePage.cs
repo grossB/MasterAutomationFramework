@@ -1,14 +1,20 @@
-﻿using OpenQA.Selenium;
-using SeleniumAPI.Pages.Google;
-using System.Collections.Generic;
+﻿using MasterAutomationFramework.T4GenericTemplates.Pages.Google;
+using OpenQA.Selenium;
+using SelApi = MasterAutomationFramework.SeleniumAPI.SeleniumElementApi;
 
 namespace GenericTemplates.GeneratedClasses
 {
     public class GooglePage : GooglePageBy
     {
-        public override string UrlAdress => throw new System.NotImplementedException();
+        protected SelApi Api;
 
-        protected override IWebDriver WebDriver => throw new System.NotImplementedException();
+        protected override IWebDriver WebDriver => this.Api.Driver;
+
+        public GooglePage(SelApi api)
+        {
+            this.Api = api;
+        }
+        public override string UrlAdress => throw new System.NotImplementedException();
 
         public override void Open()
         {

@@ -1,6 +1,5 @@
-﻿using OpenQA.Selenium;
-using SeleniumAPI.Pages.Google;
-using System.Collections.Generic;
+﻿using MasterAutomationFramework.T4GenericTemplates.Pages.Google;
+using OpenQA.Selenium;
 
 namespace GenericTemplates.GeneratedClasses
 {

@@ -34,7 +34,7 @@
 	var len = page.LastIndexOf("By");
 	string parentName = len > 0 ? page.Remove(len) : "empty";
 	#>
-<# manager.StartNewFile(page +".cs", "T4GenericTemplates", folder); #>
+<# manager.StartNewFile(page +".cs", "MasterAutomationFramework.T4GenericTemplates", folder); #>
 // ========================================================================
 //          Copyright (C) Innovative Solutions Gross Bartosz
 //                      - All Rights Reserved
@@ -48,7 +48,7 @@
 //          Developed by Bartosz Gross, grossbartosz@gmail.com
 // ========================================================================
 // ------------------------------------------------------------------------
-namespace SeleniumAPI.Pages.<#=folder#>
+namespace MasterAutomationFramework.T4GenericTemplates.Pages.<#=folder#>
 {
 	using System.Diagnostics.CodeAnalysis;
 	using OpenQA.Selenium;
