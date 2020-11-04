@@ -1,6 +1,6 @@
 ﻿namespace MasterAutomationFramework.SimpleFramework
 {
-    using GenericTemplates.GeneratedClasses;
+    using MasterAutomationFramework.T4GenericTemplates.GeneratedClasses;
     using MasterAutomationFramework.Common.Serilog.TestTemplates;
     using OpenQA.Selenium;
 

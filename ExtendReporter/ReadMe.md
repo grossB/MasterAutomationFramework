@@ -24,7 +24,7 @@ Content:
 **External Project**
 - Selenium.Essentials [https://github.com/peterrexj/Selenium.Essentials]
 
-**TODO**: SpecFlow, AutoIt, import rest of unit tests
+**TODO**: SpecFlow, AutoIt, import rest of unit tests, detailed description
 
 KeyNote:
 -

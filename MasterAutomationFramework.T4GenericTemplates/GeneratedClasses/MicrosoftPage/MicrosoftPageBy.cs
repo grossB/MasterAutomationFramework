@@ -11,14 +11,14 @@
 //          Developed by Bartosz Gross, grossbartosz@gmail.com
 // ========================================================================
 // ------------------------------------------------------------------------
-namespace MasterAutomationFramework.T4GenericTemplates.Pages.MicrosoftPage
+namespace MasterAutomationFramework.T4MasterAutomationFramework.T4GenericTemplates.Pages.MicrosoftPage
 {
 	using System.Diagnostics.CodeAnalysis;
 	using OpenQA.Selenium;
     using OpenQA.Selenium.Support.PageObjects;
 	using System.Collections.Generic;
 	using MasterAutomationFramework.SeleniumAPI.Extension;
-	using GenericTemplates.GeneratedClasses;
+	using MasterAutomationFramework.T4GenericTemplates.GeneratedClasses;
 
 	// This is auto-generated code
 	[SuppressMessage("ReSharper", "MemberCanBeProtected.Global")]

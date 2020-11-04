@@ -466,13 +466,13 @@
       <Project>{28C89452-4F66-4D85-8E67-58DC32EBB853}</Project>
       <Name>MasterAutomationFramework.SeleniumAPI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MasterAutomationFramework.T4GenericTemplates\MasterAutomationFramework.T4GenericTemplates.csproj">
+      <Project>{a41715da-d7bf-4556-a166-cabf1b3642a2}</Project>
+      <Name>MasterAutomationFramework.T4GenericTemplates</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Selenium.Essentials\Selenium.Essentials.csproj">
       <Project>{AD824F09-9B4B-45AC-A2C9-3F09EF9EE1B6}</Project>
       <Name>Selenium.Essentials</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\T4Templates\MasterAutomationFramework.T4GenericTemplates.csproj">
-      <Project>{A41715DA-D7BF-4556-A166-CABF1B3642A2}</Project>
-      <Name>MasterAutomationFramework.T4GenericTemplates</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

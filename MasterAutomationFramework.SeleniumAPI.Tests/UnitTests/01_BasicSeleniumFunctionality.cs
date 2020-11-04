@@ -11,7 +11,7 @@ using MasterAutomationFramework.SeleniumAPI.API.ElementHighlight;
 using MasterAutomationFramework.SeleniumAPI.Drivers;
 using MasterAutomationFramework.SeleniumAPI.Elements;
 using MasterAutomationFramework.SeleniumAPI.PageObjectModelWithRefeltedBy;
-using GenericTemplates.GeneratedClasses;
+using MasterAutomationFramework.T4GenericTemplates.GeneratedClasses;
 
 namespace MasterAutomationFramework.SeleniumAPI.Tests.UnitTests
 {

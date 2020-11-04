@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System.Collections.Generic;
 
-namespace GenericTemplates.GeneratedClasses
+namespace MasterAutomationFramework.T4GenericTemplates.GeneratedClasses
 {
     public abstract class WebPageBase
     {

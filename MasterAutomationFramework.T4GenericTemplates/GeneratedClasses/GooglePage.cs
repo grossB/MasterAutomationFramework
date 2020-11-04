@@ -1,8 +1,8 @@
-﻿using MasterAutomationFramework.T4GenericTemplates.Pages.Google;
+﻿using MasterAutomationFramework.T4MasterAutomationFramework.T4GenericTemplates.Pages.Google;
 using OpenQA.Selenium;
 using SelApi = MasterAutomationFramework.SeleniumAPI.SeleniumElementApi;
 
-namespace GenericTemplates.GeneratedClasses
+namespace MasterAutomationFramework.T4GenericTemplates.GeneratedClasses
 {
     public class GooglePage : GooglePageBy
     {
