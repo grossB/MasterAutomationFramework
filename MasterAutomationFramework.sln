@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework", "MasterAutomationFramework\MasterAutomationFramework.csproj", "{46EF23BF-3E42-4A5B-A9E2-3061C7DED21E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework.Common", "MasterAutomationFramework.Common\MasterAutomationFramework.Common.csproj", "{E02BE41A-D3FB-49CC-BACE-82CC58760BF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework.SeleniumAPI", "MasterAutomationFramework.SeleniumAPI\MasterAutomationFramework.SeleniumAPI.csproj", "{28C89452-4F66-4D85-8E67-58DC32EBB853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.Common", "UnitTestProject1\UnitTest.Common.csproj", "{6DD3E313-9BF6-4EC6-8737-14DC4C123114}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAutomationFramework.UnitTest.Common", "UnitTestProject1\MasterAutomationFramework.UnitTest.Common.csproj", "{6DD3E313-9BF6-4EC6-8737-14DC4C123114}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterAutomationFramework.NunitTest", "NunitTest\MasterAutomationFramework.NunitTest.csproj", "{AE2F54F0-2D20-4D9C-91D2-064557C89A0F}"
 EndProject
@@ -31,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{46EF23BF-3E42-4A5B-A9E2-3061C7DED21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46EF23BF-3E42-4A5B-A9E2-3061C7DED21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46EF23BF-3E42-4A5B-A9E2-3061C7DED21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46EF23BF-3E42-4A5B-A9E2-3061C7DED21E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E02BE41A-D3FB-49CC-BACE-82CC58760BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E02BE41A-D3FB-49CC-BACE-82CC58760BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E02BE41A-D3FB-49CC-BACE-82CC58760BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using Description = System.ComponentModel.DescriptionAttribute;
 using MasterAutomationFramework.Common.Extension;
 
-namespace UnitTestProject1.EnumExtension
+namespace MasterAutomationFramework.UnitTest.Common.EnumExtension
 {
     [TestClass]
     public class EnumExtensionTest

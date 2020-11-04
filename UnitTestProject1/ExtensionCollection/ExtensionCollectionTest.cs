@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using MasterAutomationFramework.Common.Extension;
 
-namespace UnitTestProject1.CollectionExtension
+namespace MasterAutomationFramework.UnitTest.Common.CollectionExtension
 {
     /// <summary>
     /// Summary description for UnitTest1

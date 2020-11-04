@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MasterAutomationFramework.Common.EnviromentVariablesReader;
 
-namespace UnitTestProject1.NewFolder1
+namespace MasterAutomationFramework.UnitTest.Common.NewFolder1
 {
     /// <summary>
     /// Summary description for EnviromentVariableTest
