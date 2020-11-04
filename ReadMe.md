@@ -1,16 +1,13 @@
 ﻿
-Used Nuget Packages:
-
-
 Purpose: 
+-
 Main objective of this project is to gather in one place most useful and commonly used functionality by me
 in convenient re-usable API. 
 
 KeyNote:
 -
--
 
-Project consists of few Projects:
+**Project** consists of few Projects:
 - Common
 - Unit Test Nunit3
 - Unit Test MSTest2
@@ -21,10 +18,10 @@ Project consists of few Projects:
 https://github.com/peterrexj/Selenium.Essentials -	
 https://github.com/App-vNext/Polly
 
-TODO: SpecFlow, AutoIt
+TODO: SpecFlow, AutoIt, import rest of unit tests
 
 
-Project: NunitTest - content
+**Project**: NunitTest - content
 DriverFactory - dictionary of working WebDriver. Logic can be reused to created parallel execution 
 CaseCommonDataSource - class as an test attribute with custom method passed as an parameter. 
 	Generic possibility to run test scenario with changing amount of data. Iteration count be modified by json file content.
@@ -32,7 +29,7 @@ RunMultipleScenarioByConfiguration - Example of clean up at the class scope that
 	at driver factory.
 
 
-Project: T4GenericTemplates
+**Project**: T4GenericTemplates
 T4 Template - great tool to automatically update/recreate similar structure of file. Example usage when operating on command schema that 
 is frequently changing. By declaring properties/fields as an xml attribute or node it is possible to generate all files automatically.
 
@@ -47,7 +44,7 @@ Example:
 	recognizable it is made	as and kind of abstract example to let brief idea to what so ever this tool can be used for
 
 
-Project NUnitTest:
+**Project** NUnitTest:
 Parallel execution:		
 		Children - one per each class in folder 
 		Fixture - all in parallel class attribute [TestFixture, Parallelizable(ParallelScope.All)]
