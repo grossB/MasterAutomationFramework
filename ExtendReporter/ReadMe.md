@@ -8,35 +8,17 @@ KeyNote:
 -
 
 **Project** consists of few Projects:
-
-|                                        Project			 |      Description       |
-|------------------------------------------------------------|:----------------------:|
-| MasterAutomationFramework.Common							 |                 		  |
-| MasterAutomationFramework.Common.Serilog					 |                  	  | 
-| MasterAutomationFramework.NunitTest						 | 	               	      |  
-| MasterAutomationFramework.SeleniumAPI						 |						  |
-| MasterAutomationFramework.SeleniumAPI.Tests				 |						  |
-| MasterAutomationFramework.SimpleFramework					 |						  |
-| MasterAutomationFramework.T4GenericTemplates				 |						  |
-| MasterAutomationFramework.UnitTest.Common					 |						  |
-| WindowsShurtcut											 |						  |
-| ExtendReporter											 |						  |
-																					  
-
-
-- MasterAutomationFramework.Common
-- MasterAutomationFramework.Common.Serilog
-- MasterAutomationFramework.NunitTest
-- MasterAutomationFramework.SeleniumAPI
-- MasterAutomationFramework.SeleniumAPI.Tests
-- MasterAutomationFramework.SimpleFramework
-- MasterAutomationFramework.T4GenericTemplates
-- MasterAutomationFramework.UnitTest.Common
+- Common
+- Unit Test Nunit3
+- Unit Test MSTest2
+- Selenium Basic 
+- Selenium API 
 - WindowsShurtcut
-- ExtendReporter
-- Selenium.Essentials [https://github.com/peterrexj/Selenium.Essentials]
 
-**TODO**: SpecFlow, AutoIt, import rest of unit tests
+https://github.com/peterrexj/Selenium.Essentials -	
+https://github.com/App-vNext/Polly
+
+TODO: SpecFlow, AutoIt, import rest of unit tests
 
 
 **Project**: NunitTest - content
