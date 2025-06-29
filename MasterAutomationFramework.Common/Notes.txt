@@ -1,0 +1,23 @@
+﻿
+BDD inicjowanie contextu
+
+    [Binding]
+    public class WebDriverHooks
+    {
+        private readonly FeatureContext featureContext;
+
+        private readonly ScenarioContext scenarioContext;
+
+        public WebDriverHooks(ScenarioContext scenarioContext, FeatureContext featureContext)
+        {
+            this.scenarioContext = scenarioContext;
+            this.featureContext = featureContext;
+        }
+
+
+  var featureTitle = NamesFixture.GetSubstringIfStringLongerThan(featureContext.FeatureInfo.Title.ToIdentifier(), 20);
+  var scenarioTitle = NamesFixture.GetSubstringIfStringLongerThan(scenarioContext.ScenarioInfo.Title.ToIdentifier(), 70);
+  scenarioContext.ScenarioInfo.Tags.Contains("tagName")
+
+              // Scenario CMS_setting tag has higher priority then feature CMS_setting tag
+            var tags = featureContext.FeatureInfo.Tags.Union(scenarioContext.ScenarioInfo.Tags);

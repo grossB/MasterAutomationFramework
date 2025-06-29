@@ -1,0 +1,4 @@
+﻿
+By Declaring something in Environment Variable we can specify which EnvironmentData/BroweserCapabilities/*.json FIle should be taken 
+	to run given Selenium Driver Instance, resolution, mobile version
+

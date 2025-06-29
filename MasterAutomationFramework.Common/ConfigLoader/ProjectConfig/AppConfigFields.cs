@@ -11,6 +11,11 @@ namespace MasterAutomationFramework.Common.ConfigLoader.ProjectConfig
     /// </summary>
     public static class AppConfigFields
     {
+        /// <summary>
+        ///  Gets value from APP.CONFIG FILE / Environment.config FILE
+        /// </summary>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
         public static string GetConfigFieldValue(string fieldName)
         {
             // Add Project Reference System.Configuration from Assemblies tab

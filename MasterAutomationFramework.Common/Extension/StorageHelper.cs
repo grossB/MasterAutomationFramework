@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using static Selenium.Essentials.Utility;
+﻿using System.IO;
 
 namespace NunitTest.Extensions
 {
@@ -38,11 +34,6 @@ namespace NunitTest.Extensions
             {
                 return Directory.Exists(path);
             }
-        }
-
-        public static string GetAbsolutePath(string path)
-        {
-            return Path.Combine(Runtime.ExecutingFolder, path);
         }
     }
 }
